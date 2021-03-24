@@ -6,6 +6,8 @@ const app = express();
 
 // Setting up server
 app.use(cors());
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 
 // Define PORT address
 const PORT = 8080;
